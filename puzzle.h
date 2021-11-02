@@ -14,7 +14,7 @@ static const int LAST_INDEX = NUMBER_OF_PEGS - 1;
 class Puzzle
 {
 public:
-    Puzzle(int disks);
+    explicit Puzzle(int disks);
     void move_single_disk(int from, int to);
     void move(int ndisks, int from, int to);
     void print() const;
